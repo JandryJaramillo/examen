@@ -24,10 +24,10 @@ class opciones : AppCompatActivity() {
     }
 
     private fun llamarbt1() {
-        val bt2 = findViewById<Button>(R.id.registro)
+        val bt2 = findViewById<Button>(R.id.cerrar)
 
         bt2.setOnClickListener {
-            val next: Intent = Intent(this, fotos::class.java)
+            val next: Intent = Intent(this, MainActivity::class.java)
             startActivity(next)
         }
     }

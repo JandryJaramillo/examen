@@ -30,7 +30,7 @@ class fotos : AppCompatActivity() {
         if (result.resultCode == Activity.RESULT_OK){
             val intent = result.data
             val imagBitmap = intent?.extras?.get("data") as Bitmap
-            val imageView = findViewById<ImageView>(R.id.imageView)
+            val imageView = findViewById<ImageView>(R.id.img)
             imageView.setImageBitmap(imagBitmap)
             MediaStore.Images.Media.insertImage(
                 contentResolver,

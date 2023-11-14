@@ -6,35 +6,24 @@
     android:layout_height="match_parent"
     tools:context=".Registro">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="280dp"
-        android:layout_height="249dp"
-        android:layout_marginTop="32dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/icon2" />
-
     <TextView
         android:id="@+id/logintxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="24dp"
         android:text="REGISTRO"
         android:textColor="#098FBA"
         android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.251"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
     <TextView
         android:id="@+id/textCorreo"
         android:layout_width="229dp"
         android:layout_height="38dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="32dp"
         android:paddingTop="8dp"
         android:text="Ingrese su correo"
         android:textAlignment="center"
@@ -49,27 +38,26 @@
         android:id="@+id/nombre"
         android:layout_width="229dp"
         android:layout_height="38dp"
-        android:layout_marginTop="348dp"
+        android:layout_marginTop="24dp"
         android:paddingTop="8dp"
         android:text="Nombres completos"
         android:textAlignment="center"
         android:textColor="#B5B5B5"
         android:visibility="visible"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/logintxt"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@+id/logintxt"
+        app:layout_constraintTop_toBottomOf="@+id/logintxt" />
 
     <LinearLayout
-        android:id="@+id/linearLayoutBotones"
+        android:id="@+id/linearLayoutBotones2"
         android:layout_width="228dp"
         android:layout_height="39dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="16dp"
         android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="@+id/ingresar"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/ingresar"
-        app:layout_constraintTop_toBottomOf="@+id/ingresar">
+        app:layout_constraintEnd_toEndOf="@+id/registrar"
+        app:layout_constraintStart_toStartOf="@+id/registrar"
+        app:layout_constraintTop_toBottomOf="@+id/registrar">
 
         <Button
             android:id="@+id/login"
@@ -100,23 +88,11 @@
         app:layout_constraintVertical_bias="0.428"
         app:srcCompat="@android:drawable/sym_action_email" />
 
-    <Button
-        android:id="@+id/ingresar"
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="228dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="32dp"
-        android:text="INGRESAR"
-        android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="@+id/textClave"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textClave"
-        app:layout_constraintTop_toBottomOf="@+id/textClave" />
-
     <TextView
         android:id="@+id/textClave"
         android:layout_width="229dp"
         android:layout_height="38dp"
+        android:layout_marginTop="20dp"
         android:paddingTop="8dp"
         android:text="Ingrese su clave"
         android:textAlignment="center"
@@ -150,6 +126,28 @@
         app:layout_constraintTop_toTopOf="@+id/nombre"
         app:layout_constraintVertical_bias="0.545"
         app:srcCompat="@android:drawable/ic_menu_myplaces" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="234dp"
+        android:layout_height="253dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon2" />
+
+    <Button
+        android:id="@+id/registrar"
+        android:layout_width="224dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="32dp"
+        android:text="REGISTRAR"
+        app:layout_constraintEnd_toEndOf="@+id/textClave"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textClave"
+        app:layout_constraintTop_toBottomOf="@+id/textClave" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

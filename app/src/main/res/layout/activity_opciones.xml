@@ -8,38 +8,35 @@
 
 
     <LinearLayout
-        android:id="@+id/linearLayoutBotones"
+        android:id="@+id/linearLayoutBotones2"
         android:layout_width="228dp"
         android:layout_height="39dp"
         android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="@+id/linearLayoutBotones"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayoutBotones2"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/linearLayoutBotones"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayoutBotones">
+        app:layout_constraintStart_toStartOf="@+id/linearLayoutBotones2"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutBotones2">
 
         <Button
-            android:id="@+id/registro"
-            style="@style/Widget.AppCompat.Button"
-            android:layout_width="106dp"
-            android:layout_height="match_parent"
-            android:layout_marginEnd="6dp"
-            android:text="REGISTRARSE"
-            android:textSize="8sp" />
-
-        <Button
-            android:id="@+id/login2"
-            style="@style/Widget.AppCompat.Button"
-            android:layout_width="116dp"
-            android:layout_height="match_parent"
-            android:layout_marginEnd="6dp"
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="REGISTRARSE"
-            android:textSize="8sp" />
+            android:text="SERVICIOS"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CONTACTOS"
+            android:textSize="10sp" />
 
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayoutBotones"
+        android:id="@+id/linearLayoutBotones2"
         android:layout_width="228dp"
         android:layout_height="39dp"
         android:layout_marginTop="52dp"
@@ -54,16 +51,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="FOTOS" />
+            android:text="FOTOS"
+            android:textSize="10sp" />
 
         <Button
-            android:id="@+id/login2"
-            style="@style/Widget.AppCompat.Button"
-            android:layout_width="116dp"
-            android:layout_height="match_parent"
-            android:layout_marginEnd="6dp"
+            android:id="@+id/button2"
+            android:layout_width="132dp"
+            android:layout_height="39dp"
             android:layout_weight="1"
-            android:text="REGISTRARSE"
+            android:text="GEOLOCALIZACIÓN"
             android:textSize="8sp" />
 
     </LinearLayout>
@@ -80,16 +76,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/recuperarClave2"
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="230dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="52dp"
-        android:text="OPCIONES DE LA APP"
-        android:textSize="8sp"
-        app:layout_constraintEnd_toEndOf="@+id/linearLayoutBotones"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/linearLayoutBotones"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayoutBotones" />
+        android:id="@+id/cerrar"
+        android:layout_width="229dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="72dp"
+        android:text="CERRAR SESIÓN"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayoutBotones2"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/linearLayoutBotones2"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutBotones2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

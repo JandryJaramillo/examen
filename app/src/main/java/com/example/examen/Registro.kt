@@ -23,7 +23,7 @@ class Registro : AppCompatActivity() {
     }
 
     private fun llamarbt2() {
-        val bt2 = findViewById<Button>(R.id.ingresar)
+        val bt2 = findViewById<Button>(R.id.registrar)
 
         bt2.setOnClickListener {
             val next: Intent = Intent(this, opciones::class.java)
