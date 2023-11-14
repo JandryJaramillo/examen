@@ -43,8 +43,8 @@
 
     <LinearLayout
         android:id="@+id/tableLayout"
-        android:layout_width="246dp"
-        android:layout_height="152dp"
+        android:layout_width="287dp"
+        android:layout_height="432dp"
         android:layout_marginTop="24dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="@+id/fotos2"
