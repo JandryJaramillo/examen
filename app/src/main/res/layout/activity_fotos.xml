@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fotos">
+
+    <Button
+        android:id="@+id/recuperarClave3"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="413dp"
+        android:layout_height="57dp"
+        android:text="GALERIA"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/fotos2"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="189dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="40dp"
+        android:text="FOTOS"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/recuperarClave3"
+        app:layout_constraintTop_toBottomOf="@+id/recuperarClave3" />
+
+    <Button
+        android:id="@+id/regresar"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="189dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="20dp"
+        android:text="REGRESAR"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="@+id/tableLayout"
+        app:layout_constraintStart_toStartOf="@+id/tableLayout"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="245dp"
+        android:layout_height="438dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/fotos2"
+        app:layout_constraintStart_toStartOf="@+id/fotos2"
+        app:layout_constraintTop_toBottomOf="@+id/fotos2">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

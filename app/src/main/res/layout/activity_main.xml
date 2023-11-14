@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="280dp"
+        android:layout_height="249dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon2" />
+
+    <TextView
+        android:id="@+id/logintxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="LOGIN"
+        android:textColor="#098FBA"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textCorreo"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textClave"
+        android:layout_width="229dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="28dp"
+        android:paddingTop="8dp"
+        android:text="Ingrese su clave"
+        android:textAlignment="center"
+        android:textColor="#B5B5B5"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/textCorreo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textCorreo"
+        app:layout_constraintTop_toBottomOf="@+id/textCorreo" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="26dp"
+        android:layout_height="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textCorreo"
+        app:layout_constraintEnd_toEndOf="@+id/textCorreo"
+        app:layout_constraintHorizontal_bias="0.039"
+        app:layout_constraintStart_toStartOf="@+id/textCorreo"
+        app:layout_constraintTop_toTopOf="@+id/textCorreo"
+        app:srcCompat="@android:drawable/sym_action_email" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="24dp"
+        android:layout_height="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textClave"
+        app:layout_constraintEnd_toEndOf="@+id/textClave"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="@+id/textClave"
+        app:layout_constraintTop_toTopOf="@+id/textClave"
+        app:layout_constraintVertical_bias="0.611"
+        app:srcCompat="@android:drawable/ic_lock_idle_lock" />
+
+    <Button
+        android:id="@+id/ingresar"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="228dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="40dp"
+        android:text="INGRESAR"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/textClave"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="@+id/textClave"
+        app:layout_constraintTop_toBottomOf="@+id/textClave" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutBotones"
+        android:layout_width="228dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/ingresar"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="@+id/ingresar"
+        app:layout_constraintTop_toBottomOf="@+id/ingresar">
+
+        <Button
+            android:id="@+id/registro"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="106dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="6dp"
+            android:text="REGISTRARSE"
+            android:textSize="8sp" />
+
+        <Button
+            android:id="@+id/recuperarClave"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="6dp"
+            android:text="RECUPERAR CLAVE"
+            android:textSize="8sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textCorreo"
+        android:layout_width="229dp"
+        android:layout_height="38dp"
+        android:paddingTop="8dp"
+        android:text="Ingrese su correo"
+        android:textAlignment="center"
+        android:textColor="#B5B5B5"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        tools:layout_editor_absoluteY="361dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".opciones">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutBotones"
+        android:layout_width="228dp"
+        android:layout_height="39dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayoutBotones"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/linearLayoutBotones"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutBotones">
+
+        <Button
+            android:id="@+id/registro"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="106dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="6dp"
+            android:text="REGISTRARSE"
+            android:textSize="8sp" />
+
+        <Button
+            android:id="@+id/login2"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="116dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="6dp"
+            android:layout_weight="1"
+            android:text="REGISTRARSE"
+            android:textSize="8sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutBotones"
+        android:layout_width="228dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="52dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/recuperarClave"
+        app:layout_constraintTop_toBottomOf="@+id/recuperarClave">
+
+        <Button
+            android:id="@+id/fotos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="FOTOS" />
+
+        <Button
+            android:id="@+id/login2"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="116dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="6dp"
+            android:layout_weight="1"
+            android:text="REGISTRARSE"
+            android:textSize="8sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/recuperarClave"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="413dp"
+        android:layout_height="57dp"
+        android:text="OPCIONES DE LA APP"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/recuperarClave2"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="230dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="52dp"
+        android:text="OPCIONES DE LA APP"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayoutBotones"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/linearLayoutBotones"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutBotones" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
